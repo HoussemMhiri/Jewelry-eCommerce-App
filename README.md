@@ -52,7 +52,7 @@
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/royalgem.git
+    git clone https://github.com/HoussemMhiri/Jewelry-eCommerce-App.git
     cd royalgem
     ```
 
