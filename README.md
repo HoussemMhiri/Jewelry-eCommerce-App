@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# RoyalGem - Jewelry E-commerce App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**RoyalGem** is a comprehensive Jewelry E-commerce application built with the MERN stack. This app provides a full range of e-commerce functionalities, including product filtering, search, authentication, and an admin dashboard.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### User Features
 
-### `npm start`
+- **Product Filtering:** Filter products by categories, gender, material, and price.
+- **Search Functionality:** Search for products by title or keywords.
+- **Product Details:** View detailed information about each product including the story and images.
+- **Wishlist:** Save liked products and view them later.
+- **Payment Integration:** Secure payment processing with Stripe.
+- **Authentication & Authorization:** User authentication, authorization, and logout using JWT tokens.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Admin Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Dashboard:** Access an admin dashboard with charts and statistics:
+  - **User Statistics:** Monthly user statistics.
+  - **Sales Statistics:** Total sales and sales per product.
+- **User Management:** Manage users, including viewing purchase details.
+- **Product Management:** Add, delete, and update products.
+- **Authentication:** Secure access to the admin dashboard with authentication.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:**
+  - React.js
+  - Redux for state management
+  - MUI (Material-UI) and Ant Design for UI components
+  - React Router for navigation
+  - Stripe for payment processing
+  - React Toastify for notifications
+  - Axios for HTTP requests
 
-### `npm run build`
+- **Backend:**
+  - Node.js with Express.js
+  - MongoDB for database management
+  - JWT for authentication and authorization
+  - Nodemailer for sending emails
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js & npm
+- MongoDB
+- Stripe account for payment integration
 
-### `npm run eject`
+### Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the repository:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    git clone https://github.com/yourusername/royalgem.git
+    cd royalgem
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install JavaScript dependencies:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm install
+    ```
 
-## Learn More
+3. **Set up environment variables:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    - Create a `.env` file in the root directory for both frontend and backend.
+    - Add your environment variables for API keys, MongoDB URI, and JWT secret.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```env
+    REACT_APP_API_URL=http://localhost:5000
+    REACT_APP_STRIPE_API_KEY=your_stripe_api_key
+    MONGO_URI=your_mongodb_uri
+    JWT_SECRET=your_jwt_secret
+    ```
 
-### Code Splitting
+4. **Run the development server:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```bash
+    npm start
+    ```
 
-### Analyzing the Bundle Size
+5. **Visit `http://localhost:3000` for the frontend and `http://localhost:5000` for the backend admin dashboard.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
+- **Browse Products:** Filter and search products. View details and make purchases.
+- **Manage Wishlist:** Save and view your liked products.
+- **Admin Dashboard:** Log in to manage users, view statistics, and handle products.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Contributing
+Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas.
+ 
+### Contact
+For any inquiries, feel free to reach out to me at houssemmhiri95@gmail.com.
